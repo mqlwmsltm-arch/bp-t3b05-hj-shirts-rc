@@ -1,213 +1,367 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>합정 셔츠룸 추천 | 로컬 브로가 알려주는 합정역 솔직 정찰제 2차 술집 가이드</title>
+  <meta name="description" content="합정역, 상수역 주변 가성비 좋고 깔끔한 2차 셔츠룸을 찾는 형님들을 위한 10년 차 로컬 자영업자 브로의 100% 내돈내산 추천 리포트 및 정찰 가격표 제공.">
+  <meta name="keywords" content="합정 셔츠룸 추천, 합정 셔츠룸 가격, 합정역 2차 술집, 상수 셔츠룸, 합정 비즈니스 룸">
+  <meta name="bpaas-design-system" content="midnight-glass">
+  <meta name="bpaas-design-theme" content="kr-purple">
+  <link rel="canonical" href="https://t3b05-hj-shirts-rc.pages.dev">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="합정 셔츠룸 추천 | 로컬 브로의 정찰제 가이드">
+  <meta property="og:description" content="합정역, 상수역 주변 가성비 좋고 깔끔한 2차 셔츠룸을 찾는 형님들을 위한 10년 차 로컬 자영업자 브로의 100% 내돈내산 추천 리포트 및 정찰 가격표 제공.">
+  <meta property="og:url" content="https://t3b05-hj-shirts-rc.pages.dev">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
   <style>
     :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+      --bg-primary: #110d24;
+      --bg-secondary: #1d173c;
+      --accent: #f472b6;
+      --accent-hover: #f472b6;
+      --text-main: #f3f4f6;
+      --text-sub: #9ca3af;
+      --border-color: rgba(244, 114, 182, 0.2);
+      --font-family: 'Noto Sans KR', sans-serif;
     }
+    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.7;
     }
-    .wrapper {
-      max-width: 960px;
+    
+    .container {
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 80px 0;
+      padding: 0 20px;
     }
+    
+    /* Header */
     header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
+      background: rgba(17, 13, 36, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    header .header-inner {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
+      padding: 16px 0;
     }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
+    
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #fff;
       text-decoration: none;
-      letter-spacing: 0.05em;
+      letter-spacing: -0.05em;
     }
-    nav { display: flex; gap: 32px; }
+    .logo span { color: var(--accent); }
+    
+    nav { display: flex; gap: 24px; }
     nav a {
-      color: var(--charcoal-fg);
+      color: var(--text-sub);
       text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s;
     }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
+    nav a:hover { color: var(--accent); }
+    
+    /* Hero */
+    .hero-sec {
+      padding: 100px 0 80px 0;
+      text-align: center;
+      background: radial-gradient(circle at center, rgba(244, 114, 182, 0.08) 0%, transparent 70%);
+      border-bottom: 1px solid var(--border-color);
     }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
+    
+    .hero-sec h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+      color: #fff;
     }
-    .story-body {
-      font-family: var(--serif-font);
+    .hero-sec p {
+      font-size: 1.1rem;
+      color: var(--text-sub);
+      max-width: 700px;
+      margin: 0 auto 24px auto;
+    }
+    
+    .phone-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, var(--accent), #db2777);
+      color: #110d24;
+      font-weight: 800;
       font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
+      border-radius: 9999px;
       text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
+      box-shadow: 0 4px 20px rgba(244, 114, 182, 0.4);
+      transition: all 0.3s;
+    }
+    
+    .phone-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(244, 114, 182, 0.6);
+    }
+    
+    /* Content */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      padding: 60px 0;
+    }
+    
+    .main-text {
+      font-size: 1.05rem;
+      color: #e5e7eb;
+    }
+    
+    .main-text h2 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+    
+    .main-text p {
+      margin-bottom: 20px;
+    }
+    
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+    
+    .price-table th, .price-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .price-table th {
+      background: rgba(244, 114, 182, 0.1);
+      color: #fff;
       font-weight: 700;
-      transition: all 0.3s ease;
     }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
+    
+    /* Sidebar */
+    .sidebar {
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 30px;
     }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
+    
+    .widget {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
     }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
+    
+    .widget-title {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 16px;
       font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
     }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
+    
+    /* Reviews */
+    .review-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
     }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
+    
+    .review-header {
       display: flex;
       justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
+      margin-bottom: 8px;
     }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
+    
+    .reviewer-name { font-weight: 700; font-size: 0.9rem; }
+    .review-stars { color: #fbbf24; }
+    .review-content { font-size: 0.88rem; color: var(--text-sub); }
+    
+    /* Footer */
+    footer {
+      background: #080611;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0;
+      color: var(--text-sub);
+      font-size: 0.9rem;
+    }
+    
+    footer .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .content-grid { grid-template-columns: 1fr; }
+      .hero-sec h1 { font-size: 2rem; }
+      nav { display: none; }
     }
   </style>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "합정 셔츠룸 추천",
+    "description": "홍대 및 합정역 일대 로컬 브로가 직접 탐방해 선별한 정찰제 비즈니스 셔츠룸 가이드.",
+    "telephone": "010-6279-0862",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "서울시 마포구 합정동"
+    }
+  }
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
+
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">HAPJEONG<span>SHIRTS</span></a>
+      <nav>
+        <a href="/">홈</a>
+        <a href="about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-sec">
+    <div class="container">
+      <div style="display:inline-block; font-size:0.75rem; letter-spacing:0.3em; color:var(--accent); font-family:monospace; margin-bottom:16px; text-transform:uppercase">// HAPJEONG VIP INSIDER</div>
+      <h1>합정 셔츠룸 추천</h1>
+      <p>마포, 합정역 주변에서 실패 없는 2차 술자리를 원하신다면! 10년 거주 로컬 브로가 직접 다녀보고 엄선한 투명 정찰제 셔츠룸 비교 추천 가이드라인을 제공합니다.</p>
+      <a href="tel:010-6279-0862" class="phone-btn">
+        <span>📞 실시간 예약 문의: 010-6279-0862</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="container content-grid">
+    <main class="main-text">
+      <h2>홍대, 합정역 주변, 2차 눈탱이 피하는 솔직 비결</h2>
+      <p>어서 와라 형님들! 이 동네 마포구 망원, 합정, 상수 라인에서 장사한 지 10년이 다 되어가는 로컬 브로다. 솔직히 합정 상권은 홍대랑도 가깝고 감성 술집이 밀집해 있어서 젊은 층뿐만 아니라 직장인들이 1차 모임이나 회식으로 엄청나게 몰리는 핫플이다. 1차로 딜라이트 스퀘어 주변에서 삼겹살이나 회 한 접시 뚝딱 하고 나면, 꼭 부서장들이나 동창 모임에서 "야, 2차 깔끔하고 분위기 좋게 셔츠룸이나 룸으로 가자" 하고 지시하곤 한다.</p>
+      
+      <p>하지만 이 동네를 잘 모르면 대충 번쩍이는 삐끼들 찌라시나 포털의 허위 낚시 글만 보고 들어갔다가, 계산서에 이상한 서비스 료나 룸 연장 덤탱이를 쓰고 기분만 잡쳐서 나오는 낭패를 다반사로 겪는다. 나 또한 숱하게 당하면서 내상을 입어봤다. 돈 아까운 것도 문제지만 동생들이나 바이어들 앞에서 가오가 다 구겨지는 비참함은 겪어본 형님들만 공감할 거다. 그래서 내가 합정에서 내돈내산으로 직접 수십 번 검증한 "정직한 정찰제 주대만 청구하는 리얼 명소"들을 엄선해 가이드 리포트를 개설했다.</p>
+      
+      <h2>합정 셔츠룸만의 리얼 시스템 강점 3가지</h2>
+      <p>첫째, **품격이 다른 와이셔츠 퍼포먼스:** 화려한 홀복 대신 깔끔하고 세련된 흰색 셔츠로 갈아입는 퍼포먼스가 메인인데, 이게 시각적으로도 깔끔하고 분위기를 엄청나게 띄워준다. 직원들 마인드 교육도 훌륭해서 쳐질 걱정이 전혀 없다.</p>
+      <p>둘째, **지갑 사정에 딱 맞춘 투명 정찰제:** 우리는 계산 시 유선 사전 합의와 단 1원도 다른 금액이 빌지에 기재되지 않도록 엄격하게 파트너 실장들과 관리하고 있으니 안심하셔도 좋다.</p>
+      <p>셋째, **로컬 10년 지기 다이렉트 소통:** 수수료만 떼먹는 유령 포털 말고 현장에서 룸 상태 조율하고 술 세팅까지 꼼꼼히 체크해 주는 정직한 대표번호 `010-6279-0862`로 예약하는 게 가장 현명한 노하우다.</p>
+      
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>구체적 세트 구성 내역</th>
+            <th>정찰 가격 (VAT 별도)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>기본 A세트 (위스키+안주)</td>
+            <td>양주 1병 + 과일/마른안주 1개 + 맥주 5캔 무료 세팅</td>
+            <td>160,000원 ~</td>
+          </tr>
+          <tr>
+            <td>테이블 TC (60분당)</td>
+            <td>시간당 1인 시간비용 고정</td>
+            <td>110,000원</td>
+          </tr>
+          <tr>
+            <td>룸 사용료 및 세팅비</td>
+            <td>룸 전체 무제한 대관료 정액</td>
+            <td>30,000원</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>실패 없는 예약 동선 꿀팁</h2>
+      <p>합정에서 2차 자리를 안전하게 확보하기 위해선 무조건 **"피크타임 사전 다이렉트 유선 조율"**이 필수다. 퇴근 직후 저녁 9시부터 11시는 룸이 금방 차서, 길바닥에서 20~30분 대기하다 보면 분위기가 다 쳐지기 때문이다. 직영 업주 실장과 다이렉트로 연결하여 신속하게 방을 확보할 수 있는 양심 직통망 `010-6279-0862`로 먼저 조율하시길 바란다. 10년 차 로컬 브로의 자존심을 걸고 형님들 가오를 확실하게 빳빳하게 살려 주겠다.</p>
+    </main>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3 class="widget-title">📞 24시간 실시간 예약 문의</h3>
+        <p style="font-size:0.9rem; color:var(--text-sub); margin-bottom:16px;">합정의 넘버원 양심 가이드! 정직한 주대로 최고의 방을 매칭해 드립니다.</p>
+        <a href="tel:010-6279-0862" class="phone-btn" style="width:100%; justify-content:center;">010-6279-0862</a>
       </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
+      <div class="widget">
+        <h3 class="widget-title">💬 합정 형님들의 리얼 만족 후기</h3>
+        
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">합정역5번출구</span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <p class="review-content">"합정에서 팀 회식 후 2차 갈 곳 급히 수소문하다 전화드렸는데 룸 시설 완전 화려하고 정찰제 주대 칼같이 맞춰줘서 부장님이 너무 만족해하셨습니다."</p>
+        </div>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">망원자영업자</span>
+            <span class="review-stars">★★★★★</span>
+          </div>
+          <p class="review-content">"동료들과 편하게 술자리 마무리하러 다녀왔는데 예약 빠르고 정찰제 주대 약속 완벽하게 지켜줘서 계산할 때 다들 너무 흡족하게 나왔습니다. 대박이네요."</p>
+        </div>
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">홍대출장맨</span>
+            <span class="review-stars">★★★★☆</span>
+          </div>
+          <p class="review-content">"혼술하러 조용히 가봤는데 가식 없고 양심적인 분위기로 서비스 많이 챙겨주셔서 단골 삼았습니다. 📞010-6279-0862 꼭 저장해두세요."</p>
         </div>
       </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+    </aside>
   </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <p><strong>합정 셔츠룸 추천</strong> | 대표문의: <a href="tel:010-6279-0862" style="color:var(--accent);">010-6279-0862</a></p>
+        <p style="font-size:0.8rem; margin-top:8px; opacity:0.7;">본 콘텐츠는 청소년 유해 매체에 해당하므로 19세 미만 미성년자의 열람을 엄격히 제한합니다.</p>
+      </div>
+      <p>&copy; 2026 합정 셔츠룸 추천. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
