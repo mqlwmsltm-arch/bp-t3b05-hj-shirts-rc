@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>합정 셔츠룸 추천 blog | bro! 티쓰리비오오</title>
+    <meta name="description" content="합정 셔츠룸 추천 정보글. bro가 직접 경험한 합정 셔츠룸 후기와 꿀팁 대방출. 010-6279-0862">
+    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 추천, 합정 셔츠룸 후기, 합정 셔츠룸 정보, 티쓰리비오오 블로그">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b05-hj-shirts-rc.vercel.app/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <!-- OG / Twitter -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="합정 셔츠룸 추천 blog | bro! 티쓰리비오오">
+    <meta property="og:description" content="합정 셔츠룸 추천 정보글. bro가 직접 경험한 합정 셔츠룸 후기와 꿀팁 대방출. 010-6279-0862">
+    <meta property="og:url" content="https://t3b05-hj-shirts-rc.vercel.app/blog">
+    <meta property="og:image" content="https://t3b05-hj-shirts-rc.vercel.app/og-blog.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="합정 셔츠룸 추천 blog | bro! 티쓰리비오오">
+    <meta name="twitter:description" content="합정 셔츠룸 추천 정보글. bro가 직접 경험한 합정 셔츠룸 후기와 꿀팁 대방출. 010-6279-0862">
+    <style>
+        /* RESET / BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: 'Courier New', Courier, monospace; background: #0a0a0a; color: #f0f0f0; line-height: 1.6; min-height: 100vh; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        /* Brutalist DNA */
+        h1, h2, h3, h4 { font-weight: 900; letter-spacing: -0.05em; text-transform: uppercase; color: #ff00ff; }
+        h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 0.9; margin-bottom: 1rem; }
+        h2 { font-size: clamp(1.8rem, 5vw, 3rem); margin-bottom: 0.75rem; }
+        h3 { font-size: clamp(1.3rem, 3vw, 2rem); margin-bottom: 0.5rem; }
+        a { color: #00ffff; text-decoration: underline; text-underline-offset: 4px; transition: color 0.2s; }
+        a:hover { color: #ff00ff; }
+        /* LAYOUT - full bleed, asymmetric */
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; position: relative; }
+        @media (max-width: 768px) { .container { padding: 1rem; } }
+
+        /* ---------- HEADER ---------- */
+        header { background: #111; border-bottom: 4px solid #ff00ff; padding: 1rem 0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        header .logo { font-size: 2rem; font-weight: 900; color: #ff00ff; text-decoration: none; letter-spacing: -0.05em; }
+        header .logo:hover { color: #00ffff; }
+        @media (max-width: 768px) { header .container { flex-direction: column; gap: 1rem; } }
+
+        /* nav-present, hamburger-menu pattern */
+        nav { display: flex; align-items: center; gap: 2rem; }
+        nav a { font-weight: 700; text-transform: uppercase; font-size: 0.9rem; padding: 0.5rem 1rem; border: 2px solid transparent; transition: 0.2s; }
+        nav a:hover { border-color: #ff00ff; background: #ff00ff22; }
+        .hamburger-menu { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 5px; }
+        .hamburger-menu span { width: 30px; height: 4px; background: #ff00ff; display: block; }
+        @media (max-width: 768px) {
+            .hamburger-menu { display: flex; }
+            nav { display: none; flex-direction: column; width: 100%; gap: 0.5rem; }
+            nav.open { display: flex; }
+            nav a { width: 100%; text-align: center; border: 1px solid #333; }
+        }
+
+        /* tel-link */
+        .tel-link { display: inline-flex; align-items: center; gap: 0.5rem; background: #ff00ff; color: #000; font-weight: 900; padding: 0.75rem 1.5rem; text-decoration: none; text-transform: uppercase; border: 3px solid #000; transition: 0.2s; font-size: 1.2rem; }
+        .tel-link:hover { background: #00ffff; color: #000; border-color: #ff00ff; }
+        @media (max-width: 768px) { .tel-link { font-size: 1rem; padding: 0.6rem 1rem; } }
+
+        /* ---------- BLOG ARTICLE ---------- */
+        .blog-article { padding: 3rem 0; }
+        .blog-article .article-header { margin-bottom: 2rem; border-left: 8px solid #ff00ff; padding-left: 1.5rem; }
+        .blog-article .article-meta { font-size: 0.8rem; color: #888; text-transform: uppercase; margin-top: 0.5rem; }
+        .blog-article .article-body { max-width: 800px; }
+        .blog-article .article-body p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .blog-article .article-body strong { color: #ff00ff; }
+        .blog-article .article-body .highlight-box { background: #111; border: 2px solid #ff00ff; padding: 1.5rem; margin: 1.5rem 0; position: relative; }
+        .blog-article .article-body .highlight-box::before { content: '🔥 핵심 꿀팁'; position: absolute; top: -12px; left: 12px; background: #0a0a0a; padding: 0 8px; font-weight: 900; color: #ff00ff; font-size: 0.85rem; text-transform: uppercase; }
+        .blog-article .article-body ul { margin: 1rem 0 1.5rem 2rem; list-style: square; color: #00ffff; }
+        .blog-article .article-body ul li { margin-bottom: 0.5rem; }
+
+        /* ---------- FOOTER ---------- */
+        footer { background: #111; border-top: 4px solid #ff00ff; padding: 2rem 0; text-align: center; font-size: 0.8rem; color: #666; }
+        footer a { color: #00ffff; }
+
+        /* responsive-1280, responsive-768 */
+        @media (max-width: 768px) {
+            .blog-article .article-header { padding-left: 1rem; border-left-width: 4px; }
+            .blog-article .article-body { max-width: 100%; }
+            .blog-article .article-body .highlight-box { padding: 1rem; }
+        }
+
+        /* 추가: 푸터 tel-link 호환 */
+        .footer-tel { margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">T3B05</a>
+            <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/about">소개</a>
+                <a href="/blog">블로그</a>
+                <a href="/contact">연락처</a>
+                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-article">
+            <div class="container">
+                <div class="article-header">
+                    <h1>합정 셔츠룸 추천 — bro가 진짜 다녀본 후기</h1>
+                    <div class="article-meta">2025.02.20 | by bro | 5 min read</div>
+                </div>
+
+                <div class="article-body">
+                    <p>야, bro. 요즘 합정에서 핫하다는 셔츠룸, 들어봤지? 나도 사실 처음엔 "셔츠룸이 뭐야, 그냥 술 마시는 데 아냐?" 이랬거든. 근데 티쓰리비오오(t3b05) 다녀온 뒤로 생각이 완전 바꼈어. 오늘은 <strong>합정 셔츠룸 추천</strong> 정보글을 써볼게. 내돈내산 후기니까 믿어도 돼, bro.</p>
+
+                    <h2>왜 하필 합정이야?</h2>
+                    <p>합정은 홍대랑 가까우면서도 좀 더 아늑한 느낌? 근데 셔츠룸은 또 다르더라고. 분위기가 <strong>street brutalist</strong> 그 자체야. 약간 투박하면서도 센스 있는 인테리어, 거기에 직원들도 친절하고. 내가 간 곳은 '티쓰리비오오'였는데, 입구부터 느낌이 확 살았어. 어두운 조명에 네온사인, 딱 내 스타일이었음.</p>
+
+                    <p>처음엔 가격이 부담됐는데, 막상 가보니 <strong>합정 셔츠룸 가격</strong> 대비 퀄리티가 미쳤어. 안주도 푸짐하고, 술 종류도 많고. 특히 양주 세트로 시키면 꿀조합이야. 게다가 직원들이랑 금방 친해져서 bro처럼 놀 수 있어. 진짜 추천한다니까?</p>
+
+                    <div class="highlight-box">
+                        <p><strong>🔥 꿀팁:</strong> 합정 셔츠룸 갈 때는 미리 전화해서 예약하는 게 좋아. 특히 주말에는 바로 자리 없을 수도 있음. 티쓰리비오오는 <a href="tel:010-6279-0862">010-6279-0862</a>로 콜 하면 바로 예약 가능!</p>
+                    </div>
+
+                    <h2>내가 본 합정 셔츠룸 후기들</h2>
+                    <p>인터넷에 <strong>합정 셔츠룸 후기</strong> 찾아보면 생각보다 많지 않더라고? 그래서 내가 직접 쓰기로 했어. 여기서 중요한 포인트 몇 개만 짚어줄게:</p>
+                    <ul>
+                        <li><strong>분위기:</strong> 너무 어둡지도 않고 밝지도 않은, 딱 적당한 무드. 음악도 트렌디함.</li>
+                        <li><strong>서비스:</strong> 직원들이 눈치가 빠르고, 원하는 거 바로바로 해줌. 불편한 적 없었음.</li>
+                        <li><strong>위치:</strong> 합정역 2번 출구에서 도보 3분? 진짜 가까워. 지하철 타고 가기도 편해.</li>
+                        <li><strong>가격:</strong> 코스에 따라 다르지만, 1인 10~15만원 정도면 충분히 즐길 수 있음. 이 정도면 합정 셔츠룸 추천 리스트에 들어갈 만하지?</li>
+                    </ul>
+
+                    <p>내가 간 날은 평일 저녁이었는데도 사람들이 꽤 있었어. <strong>합정 역 셔츠룸</strong> 중에서 제일 핫한 곳이라 그런가 봐. 그리고 여기는 단체로 와도 좋고, 2~3명이서 와도 괜찮아. 오히려 소수로 오면 직원들이랑 더 친해질 수 있어서 좋더라고.</p>
+
+                    <h2>진짜 <strong>합정 셔츠룸 1등</strong>은?</h2>
+                    <p>내 기준으로 티쓰리비오오가 확실히 1등이야. 이유가 몇 가지 더 있어. 첫째, 입장할 때부터 나오는 음악 센스. 둘째, 직원들이 그냥 일하는 게 아니라 진짜 즐기면서 하는 느낌? 그리고 셋째, 가격 대비 만족도. 다른 곳도 가봤지만 여기만한 데가 없었음.</p>
+
+                    <p>그리고 bro, 여기 <strong>합정 셔츠룸</strong> 특화된 이벤트도 있어. 가끔 게임도 하고, 서비스로 샷도 주고. 완전 혜자야. 진짜 확 찢는 밤을 보장한다니까? 지금 바로 콜 해봐. <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a> — 나도 이 번호로 예약했어.</p>
+
+                    <p>마지막으로 꼭 당부할게. <strong>합정 셔츠룸 추천</strong> 검색해서 아무 데나 가면 후회할 수도 있어. 하지만 t3b05는 내가 보증한다. 친구들이랑, 혹은 혼자라도 가서 분위기 즐기기 좋은 곳. 꼭 한 번 가봐, bro. 후회 없을 거야.</p>
+
+                    <p><em>— 브로가 직접 쓴 솔직 후기였습니다. 질문 있으면 댓글이나 전화 주세요! 010-6279-0862</em></
+</body>
+</html>
